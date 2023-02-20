@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import UserComponent from './signalcomponents/UserComponent';
 import { HubConnection, HubConnectionBuilder, HubConnectionState } from '@microsoft/signalr';
+import ChessComponent from './signalcomponents/ChessComponent';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <UserComponent connection={connectionUserCount}></UserComponent>
+        <ChessComponent></ChessComponent>
       </header>
     </div>
   );
